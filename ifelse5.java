@@ -14,9 +14,8 @@ public class ifelse5 {
         if (delta < 0) {
             System.out.println("The equation has no solution");
         } else if (delta == 0) {
-            double x1 = -b/ 2*a;
-            double x2 = -b/ 2*a;
-            System.out.print("The equation has only 1 solution: x1 = x2 = " + x1);
+            double x = -b/ 2*a;
+            System.out.print("The equation has only 1 solution: x1 = x2 = " + x);
         } else {
             double x1 = (-b + Math.sqrt(delta))/ 2*a;
             double x2 = (-b - Math.sqrt(delta))/ 2*a;
