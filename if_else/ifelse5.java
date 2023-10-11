@@ -19,7 +19,7 @@ public class ifelse5 {
         } else {
             double x1 = (-b + Math.sqrt(delta))/ 2*a;
             double x2 = (-b - Math.sqrt(delta))/ 2*a;
-            System.out.println("The equation has 2 solutions: x1 = " + x1 + "," + "x2 = " + x2);
+            System.out.println("The equation has 2 solutions: x1 = " + x1 + "," + " x2 = " + x2);
         }
     }
 }
