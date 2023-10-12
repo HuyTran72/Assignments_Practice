@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class example {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Input an integer: ");
+        System.out.print("Input an integer: ");
         int a = sc.nextInt();
 
         int div = a%2;
