@@ -15,7 +15,8 @@ public class ass16 {
                 for (int i = 1; i <= n; i++) {
                     fac *= i;
                 }
-                System.out.println("The result is " + fac);
+                System.out.println("The result " + n + "! = " + fac);
+
                 break;
             case 2:
                 int a = 1;
@@ -23,7 +24,7 @@ public class ass16 {
                     fac *= a;
                     a++;
                 }
-                System.out.println("The result is " + fac);
+                System.out.println("The result " + n + "! = " + fac);
                 break;
         }
     }
