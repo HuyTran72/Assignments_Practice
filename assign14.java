@@ -7,16 +7,15 @@ public class assign14 {
         int n = sc.nextInt();
         int sum = 0;
 
-        if (n%2 == 1){
-            for(int i = 1; i <= n; i++) {
-                if (n==3)
+        if(n%2 != 0) {
+            for(int i = 1; i <= n; i+=2) {
+                if (i==3) {
                     continue;
-                else {
+                } else 
                 sum += i;
-                }
-            System.out.println("The result is " + sum);
             }
-        } else
-            return;
+            System.out.println("The result is " + sum);
+        }
+        
     }
 }
