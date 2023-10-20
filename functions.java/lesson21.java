@@ -4,7 +4,7 @@ public class lesson21 {
         System.out.println(result);
 
         Hello("male");
-        Hello("female");
+        Hello("femalee");
     }
 
     public static int sum(int x, int y, int z) {
@@ -19,6 +19,8 @@ public class lesson21 {
             System.out.println("Hello, I am female");
         } else if (gender.equals("male")) {
             System.out.println("Hello, I am male");
+        } else {
+            System.out.println("No gender");
         }
     }
 }
