@@ -12,6 +12,9 @@ public class lesson20 {
             System.out.println("Error-Error-Error-Error-Error");
             ex.printStackTrace();
         }
+        finally {
+            System.out.println("RUN CODE");
+        }
         System.out.println("Print code");
     }
 }
