@@ -1,10 +1,17 @@
 public class lesson20 {
     public static void main(String[] args) {
         int a = 10;
-        int b = 0;
-        int c = a / b;
+        int b = 5;
+        
 
-        System.out.println("c = " + c );
+        try {
+            int c = a / b;
+            System.out.println("c = " + c );
+        }
+        catch (Exception ex) {
+            System.out.println("Error-Error-Error-Error-Error");
+            ex.printStackTrace();
+        }
         System.out.println("Print code");
     }
 }
