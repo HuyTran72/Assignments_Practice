@@ -1,6 +1,11 @@
 public class example1 {
     public static void main(String[] args) {
-        
+        String result1 = Solvept2(1, 2, 3);
+        String result2 = Solvept2(1, 2, 1);
+        String result3 = Solvept2(1, 2, -3);
+        System.out.println(result1);
+        System.out.println(result1);
+        System.out.println(result1);
     }
 
     public static String Solvept2(double a, double b, double c) {
