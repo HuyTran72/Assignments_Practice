@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class example1 {
     public static void main(String[] args) {
         String result1 = Solvept2(1, 2, 3);
@@ -6,6 +8,16 @@ public class example1 {
         System.out.println(result1);
         System.out.println(result2);
         System.out.println(result3);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input a = ");
+        double a = sc.nextDouble();
+        System.out.print("Input b = ");
+        double b = sc.nextDouble();
+        System.out.print("Input c = ");
+        double c = sc.nextDouble();
+        String result4 = Solvept2(a, b, c);
+        System.out.println(result4);
     }
 
     public static String Solvept2(double a, double b, double c) {
@@ -27,7 +39,7 @@ public class example1 {
             } else {
                 double x1 = (-b + Math.sqrt(delta))/ (2*a);
                 double x2 = (-b - Math.sqrt(delta))/ (2*a);
-                return ("Has 2 solutions x1 = " + x1 + " x2 = " + x2);
+                return ("Has 2 solutions x1 = " + x1 + "; x2 = " + x2);
             }
         }
     }
