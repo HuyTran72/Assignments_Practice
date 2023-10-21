@@ -29,6 +29,7 @@ public class assign19 {
             }
             return a/b;
         }
+        System.out.println("Please input the operation (+ or - or * or /)");
         return a;
     }
 }
