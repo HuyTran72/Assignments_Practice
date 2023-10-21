@@ -1,3 +1,4 @@
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class lesson22 {
@@ -21,5 +22,7 @@ public class lesson22 {
         int day1 = cal.get(Calendar.DAY_OF_MONTH);
 
         System.out.println("Born in " + month1 + "/" + day1 + "/" + year1);
+
+        
     }
 }
