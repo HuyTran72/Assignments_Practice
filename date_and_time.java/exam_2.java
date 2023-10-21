@@ -14,12 +14,17 @@ public class exam_2 {
         
 
         Calendar birthday = Calendar.getInstance();
-
+        
         birthday.set(year, month-1, day);
         int year_born = birthday.get(Calendar.YEAR);
         int month_born = birthday.get(Calendar.MONTH);
         int day_born = birthday.get(Calendar.DAY_OF_MONTH);
         System.out.println("Born in " + (month_born+1) + "/" + day_born + "/" + year_born);
+        
+        
+        Calendar now = Calendar.getInstance();
+        int current_year = now.get(Calendar.YEAR);
+        age = current_year - year_born;
         
     }
 }
