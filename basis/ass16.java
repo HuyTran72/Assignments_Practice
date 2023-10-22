@@ -1,3 +1,4 @@
+package basis;
 import java.util.Scanner;
 
 public class ass16 {

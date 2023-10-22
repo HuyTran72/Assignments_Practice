@@ -1,3 +1,4 @@
+package basis;
 import java.util.Scanner;
 
 public class assign18 {

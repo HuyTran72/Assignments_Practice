@@ -1,3 +1,4 @@
+package basis;
 public class ex15_dowhile {
     public static void main(String[] args) {
         int a = 1;

@@ -1,3 +1,4 @@
+package basis;
 public class assign15 {
     public static void main(String[] args) {
         int n = 50;

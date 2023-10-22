@@ -1,3 +1,4 @@
+package basis;
 public class assign16 {
     public static void main(String[] args) {
         int sum = 0;

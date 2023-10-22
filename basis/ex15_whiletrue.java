@@ -1,3 +1,4 @@
+package basis;
 public class ex15_whiletrue {
     public static void main(String[] args) {
         int n = 0;
