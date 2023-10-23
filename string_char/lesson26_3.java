@@ -25,5 +25,11 @@ public class lesson26_3 {
         for (int i =0; i< arr2.length; i++) {
             System.out.println(arr2[i]);
         }
+
+        String s43 = "afvrv1234gvr";
+        StringBuilder s44 = new StringBuilder(s43);
+        s44.reverse();
+        String s45 = s44.toString();
+        System.out.println(s44);
     }
 }
