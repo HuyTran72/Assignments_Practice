@@ -3,73 +3,51 @@ import java.util.Scanner;
 public class assign_20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("The password has to at least 6 characters, 1 letter, and 1 number");
+        System.out.println("Please enter your password: ");
+        String newpass = sc.nextLine();
         String password = "";
-        while(true) {
-            System.out.println("The password has at least 6 character, 1 letter, and 1 number");
-            System.out.println("Please set the password: ");
-            String newPassword = sc.nextLine();
-
-            if(checkpass(newPassword)) {
-                password = newPassword;
-                System.out.println("New password has set");
-                break;
-            } else {
-                System.out.println("Invalid password, please set again!");
-            }
-
-        }
-
-        // Input the password
         int count = 0;
-        String login = "";
-        while(true) {
-            System.out.println("Please login: ");
-            login = sc.nextLine();
 
-            //check same password
-            if(login.equals(password)){
-                System.out.println("Login succesfully");
-                break;
-            }else {
-                System.out.println("Invalid password, please input again!");
-                count++;
-            }
-
-            //if count = 5, break
-            if(count == 5) {
-                System.out.println("You are wrong 5 times, the account was locked!");
-                break;
-            }
+        if(newpass.equals(password)) {
+            password = newpass;
+        } else {
+            System.out.println("Invalid password, please enter again");
+            count++;
         }
+
+        if(count > 5) {
+            System.out.println("You are wrong 5 times, your account was locked");
+            break;
+        }
+
 
     }
 
     public static boolean checkpass(String password) {
-        if(password.length() < 6) {
+        if (password.length() < 6) {
             return false;
         }
 
         boolean hasLetter = false;
-        for (char c: password.toCharArray()) {
-            if(Character.isLetter(c)) {
-                hasLetter = true;
-                break;
-            }
+        for (char c : password.toCharArray()) {
+            hasLetter = true;
+            break;
         }
-        if(!hasLetter){
+        if (!hasLetter) {
             return false;
         }
 
-        boolean hasNumber = false;
-        for(char c : password.toCharArray()) {
-            if(Character.isDigit(c)) {
-                hasNumber = true;
-                break;
-            }
+        boolean hasNum = false;
+        for(char c: password.toCharArray()) {
+            hasNum = true;
+            break;
         }
-        if (!hasNumber) {
+        if (!hasNum) {
             return false;
         }
+
     return true;
-    }
+
+    }       
 }
