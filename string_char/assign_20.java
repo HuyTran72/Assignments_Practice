@@ -1,10 +1,22 @@
+import java.util.Scanner;
+
 public class assign_20 {
     public static void main(String[] args) {
-        boolean result = checkpass("16aA");
-        if(result) {
-            System.out.println("Valid");
-        } else {
-            System.out.println("Invalid");
+        Scanner sc = new Scanner(System.in);
+        String password = "";
+        while(true) {
+            System.out.println("The password has at least 6 character, 1 letter, and 1 number");
+            System.out.println("Please set the password: ");
+            String newPassword = sc.nextLine();
+
+            if(checkpass(newPassword)) {
+                password = newPassword;
+                System.out.println("New password has set");
+                break;
+            } else {
+                System.out.println("Invalid password, please set again!");
+            }
+
         }
     }
 
