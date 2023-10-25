@@ -18,6 +18,30 @@ public class assign_20 {
             }
 
         }
+
+        // Input the password
+        int count = 0;
+        String login = "";
+        while(true) {
+            System.out.println("Please login: ");
+            login = sc.nextLine();
+
+            //check same password
+            if(login.equals(password)){
+                System.out.println("Login succesfully");
+                break;
+            }else {
+                System.out.println("Invalid password, please input again!");
+                count++;
+            }
+
+            //if count = 5, break
+            if(count == 5) {
+                System.out.println("You are wrong 5 times, the account was locked!");
+                break;
+            }
+        }
+
     }
 
     public static boolean checkpass(String password) {
