@@ -3,25 +3,42 @@ import java.util.Scanner;
 public class assign_20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("The password has to at least 6 characters, 1 letter, and 1 number");
-        System.out.println("Please enter your password: ");
-        String newpass = sc.nextLine();
         String password = "";
+
+        while (true) {
+            System.out.println("The password has to at least 6 characters, 1 letter, and 1 number");
+            System.out.println("Please enter your password: ");
+            String newpass = sc.nextLine();
+
+            if(checkpass(newpass)) {
+                password = newpass;
+                System.out.println("New password has set");
+                break;
+            } else {
+                System.out.println("Invalid password, please enter again");
+            }
+            
+        }
+
         int count = 0;
+        String login = "";
+        while (true) {
+            System.out.println("Login");
+            login = sc.nextLine();
 
-        if(newpass.equals(password)) {
-            password = newpass;
-        } else {
-            System.out.println("Invalid password, please enter again");
-            count++;
+            if(login.equals(password)) {
+                System.out.println("Login is successful");
+                break;
+            }else {
+                System.out.println("Invalid password, please try again");
+                count++;
+            }
+
+            if(count == 5) {
+                System.out.println("You are wrong 5 times, your account was locked");
+                break;
+            }
         }
-
-        if(count > 5) {
-            System.out.println("You are wrong 5 times, your account was locked");
-            break;
-        }
-
-
     }
 
     public static boolean checkpass(String password) {
@@ -31,23 +48,27 @@ public class assign_20 {
 
         boolean hasLetter = false;
         for (char c : password.toCharArray()) {
-            hasLetter = true;
-            break;
+            if (Character.isLetter(c)) {
+                hasLetter = true;
+                break;
+            }      
         }
         if (!hasLetter) {
             return false;
         }
 
+
         boolean hasNum = false;
         for(char c: password.toCharArray()) {
-            hasNum = true;
-            break;
+            if(Character.isDigit(c)) {
+                hasNum = true;
+                break;
+            } 
         }
         if (!hasNum) {
             return false;
         }
 
-    return true;
-
+        return true;
     }       
 }
