@@ -5,18 +5,18 @@ public class assign_19 {
         int count = 0;
         String[] parts = str1.split(" ");
 
-        for (String arr_parts : parts) {
-            System.out.println(arr_parts);
-            try {
-                int num = Integer.parseInt(arr_parts);
-                sum += num;
-                count++;
-            }catch(NumberFormatException e){
-                 
-            }
+        for (String pt1 : parts) {
+            System.out.println(pt1);
         }
-        double mean = sum / count;
-        System.out.println("The sum is: " + sum);
-        System.out.println("The mean is: " + mean);
+        try {
+            int num = Integer.parseInt(str1);
+            sum += num;
+            count++;
+        } catch (NumberFormatException e){
+
+        }
+        double mean = sum/ count;
+        System.out.println(sum);
+        System.out.println(mean);
     }
 }
