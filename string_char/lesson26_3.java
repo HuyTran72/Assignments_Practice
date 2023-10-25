@@ -28,8 +28,7 @@ public class lesson26_3 {
 
         String s43 = "afvrv1234gvr";
         StringBuilder s44 = new StringBuilder(s43);
-        s44.reverse();
-        String s45 = s44.toString();
+        s44.reverse().toString();
         System.out.println(s44);
     }
 }
