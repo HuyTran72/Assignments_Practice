@@ -5,18 +5,25 @@ public class assign_23 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Input an string text: ");
         String input = sc.nextLine();
-    }
 
-    public static boolean substring(String input) {
-        boolean hasLetter = false;
-        for(char c: input.toCharArray()) {
-            if (Character.isLetter(c)) {
-                hasLetter = true;
-                System.out.println(c);
+        StringBuilder words = new StringBuilder();
+        StringBuilder number = new StringBuilder();
+        StringBuilder other = new StringBuilder();
+
+        //loop words
+        for (int i=0; i<input.length(); i++) {
+            char c = input.charAt(i);
+            if(Character.isDigit(c)) {
+                number.append(c);
+            } else if (Character.isLetter(c)) {
+                words.append(c);
+            } else {
+                other.append(c);
             }
         }
 
-        return true;
-        
+        System.out.println(words);
+        System.out.println(number);
+        System.out.println(other);
     }
 }
