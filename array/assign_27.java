@@ -9,9 +9,9 @@ public class assign_27 {
         int n = sc.nextInt();
 
         int[] arr = new int[n];
+        System.out.println("Please input the elements");
 
         for(int i=0; i<n ; i++) {
-            System.out.println("Please input the elements");
             System.out.print("arr[" + i + "] = ");
             arr[i] = sc.nextInt();
         }
@@ -28,5 +28,31 @@ public class assign_27 {
         //Sort elements increase
         Arrays.sort(arr);
         System.out.println("The sort of array: " + Arrays.toString(arr));
+
+        //count sum
+        int sum = 0;
+        for(int i = 0; i<n; i++) {
+            sum += arr[i];
+        }
+        System.out.println("The sum is: " + sum);
+
+        //Check index of elements
+        System.out.print("Input an integer number: ");
+        int number = sc.nextInt();
+
+        boolean check = false;
+        String index = "";
+        for(int i = 0; i < n; i++) {
+            if(number==arr[i]) {
+                check = true;
+                index += (i + " ");
+            }
+        }
+
+        if(check) {
+            System.out.println(number + " exists in array with index is: " + index);
+        } else {
+            System.out.println(number + "does not exist in array");
+        }
     }
 }
