@@ -32,5 +32,19 @@ public class lesson27_2 {
         }
         System.out.println("The reverse of arr is: " + Arrays.toString(arr9));
         
+
+        int[] arr10 = {8,9,12,48,1,2,1,3};
+        int[] arr11 = arr10;
+        arr10[0] = 101;
+        System.out.println(Arrays.toString(arr10));
+
+
+        //clone
+        int[] arr12 = {8,9,12,48,1,2,1,3};
+        int[] arr13 = arr12.clone();
+        arr12[0] = 99;
+
+
+
     }
 }
