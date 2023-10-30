@@ -17,5 +17,20 @@ public class lesson27_2 {
         }
 
         System.out.println("Array is: " + Arrays.toString(arr));
+
+
+        int[] arr8 = {8,9,12,48,1,2,1,3};
+        Arrays.sort(arr8);
+        System.out.println("Mang sau sap xep:" + Arrays.toString(arr8));
+
+        int[] arr9 = {8,9,12,48,1,2,1,3};
+        for(int i=0, j = arr9.length-1; i<j; i++,j--) {
+            int temp = arr9[i];
+            arr9[i] = arr9[j];
+            arr9[j] = temp;
+
+        }
+        System.out.println("The reverse of arr is: " + Arrays.toString(arr9));
+        
     }
 }
