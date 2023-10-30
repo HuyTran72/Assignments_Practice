@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class lesson27_2 {
@@ -11,7 +12,10 @@ public class lesson27_2 {
 
         //input data for each element
         for(int i=0; i< n; i++) {
-            System.out.println(i);
+            System.out.println("arr[" + i + "]= ");
+            arr[i] = sc.nextInt();
         }
+
+        System.out.println("Array is: " + Arrays.toString(arr));
     }
 }
