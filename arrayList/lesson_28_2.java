@@ -23,5 +23,13 @@ public class lesson_28_2 {
         for(int value: lst10) {
             System.out.println(value);
         }
+
+        System.out.println("---------");
+        //solution 2
+        ArrayList<Integer> lst11 = new ArrayList<>(List.of(1,20,3,41,5,6));
+        for(int i=0; i<lst11.size(); i++) {
+            int vl = lst11.get(i);
+            System.out.println(vl);
+        }
     }
 }
