@@ -33,6 +33,11 @@ public class lesson_28 {
         lst5.remove(Integer.valueOf(3));
         System.out.println(lst5);
 
+        ArrayList<Integer> lst6 = new ArrayList<>(List.of(1,2,3,4,5,6));
+        System.out.println("lst6= "+lst6);
+        lst6.set(2,99);
+        System.out.println("lst6 after change: "+lst6);
+
 
 
     }
