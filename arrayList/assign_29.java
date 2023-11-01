@@ -16,7 +16,7 @@ public class assign_29 {
         System.out.println("The list is: " + lst);
 
         System.out.println("----------");
-        
+
         ArrayList<Integer> lstSquare = new ArrayList<>();
         System.out.print("Input number of elements n = ");
         n = sc.nextInt();
@@ -26,5 +26,16 @@ public class assign_29 {
             lstSquare.add(numSq*numSq);
         }
         System.out.println("The list square of elements is: " + lstSquare);
+        
+        ArrayList<Integer> lstCount = new ArrayList<>(); 
+        int count = 0; 
+        for(int x: lst) {
+            if (x > 50) {
+                lstCount.add(x);
+                count++;
+            }
+        }
+        System.out.println("The number of elements which are larger than 50 is: " + count);
+        System.out.println("List of elements larger than 50 is: "+ lstCount);
     }
 }
