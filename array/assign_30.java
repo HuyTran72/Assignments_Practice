@@ -17,7 +17,6 @@ public class assign_30 {
             if(rlt.equals(result.get(i))) {
                 System.out.println("The answer is perfect!!!");
             } else {
-                System.out.println("Sorry, the answer is wrong. Please answer again: ");
                 System.out.println("Sorry, the answer is wrong. The answer is: " + result.get(i));
             }
         }
