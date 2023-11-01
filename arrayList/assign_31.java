@@ -11,22 +11,20 @@ public class assign_31 {
         Random rd = new Random();
         ArrayList<Integer> list = new ArrayList<>();
         for(int i = 0; i<n ; i++) {
-            int ranDom = rd.nextInt(n);
+            int ranDom = rd.nextInt(101);
             list.add(ranDom);
         }
         System.out.println("The list is: " + list);
 
         int count = 0;
-        ArrayList<Integer> listNew = new ArrayList<>();
-        for(int x: list) {
-            if(x < 80) {
-                listNew.add(x);
+        String index = "";
+        for(int i=0; i<n; i++) {
+            if(list.get(i) < 80) {
                 count++;
+                index+= i+" ";
             }
         }
         System.out.println("The number of elements less than 80 is: " + count);
-        System.out.println("The list of elements less than 80 is: " + listNew);
-
-        
+        System.out.println("The list of index of elements less than 80 is: " + index);
     }
 }
