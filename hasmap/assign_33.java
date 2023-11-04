@@ -26,7 +26,5 @@ public class assign_33 {
         } else {
             System.out.println("Login succesful");
         }
-
-        
     }
 }
