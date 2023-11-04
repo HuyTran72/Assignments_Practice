@@ -14,22 +14,19 @@ public class assign_33 {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Input the username: ");
-        String user = sc.nextLine();
+        String userName = sc.nextLine();
         System.out.print("Input the password: ");
         String pass = sc.nextLine();
 
-        for(String key: dic.keySet()) {
-            if(!key.equals(user)) {
-                System.out.println("User does not exist");
-                break;
-            }
+        //check
+        if(!dic.containsKey(userName)) {
+            System.out.println("User doesn't exist");
+        } else if (!dic.get(userName).equals(pass)) {
+            System.out.println("Password is wrong");
+        } else {
+            System.out.println("Login succesful");
         }
 
-        for(String value: dic.values()) {
-            if(value.equals(pass)) {
-                System.out.println("Password is wrong");
-                break;
-            }
-        }
+        
     }
 }
