@@ -11,5 +11,8 @@ public class Attribute {
 
         Student sv4 = new Student("Chicken", 9.5);
         sv4.showInfor();
+
+        System.out.println(sv4.getName());
+        System.out.println(sv4.getScore());
     }
 }

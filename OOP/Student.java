@@ -21,4 +21,26 @@ public class Student {
     public void showInfor() {
         System.out.println(name+ " : " + score);
     }
+
+
+    //get and set
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        this.score = score;
+    }
+
+    //get and set
+    
 }
