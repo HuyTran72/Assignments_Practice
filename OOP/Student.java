@@ -27,6 +27,10 @@ public class Student {
         return ((Math + Literature)/2);
     }
 
+    public double countDTB(double math, double literature, double engligh) {
+        return ((math + literature + engligh)/3);
+    }
+
 
     //get and set
 
@@ -58,6 +62,25 @@ public class Student {
     private boolean checkScore () {
         return this.score >= 24;
     }
+
+    //service method
+    public void checkTool () {
+        if(checkScore()) {
+             System.out.println("Valid Score");
+        } else {
+            System.out.println("Check again");
+        }
+    }
+
+    //parametter list
+    public double sumScore(double ... arr) {
+        double sum = 0;
+        for(double x: arr) {
+            sum+=x;
+        }
+        return sum;
+    }
+
     
     
 

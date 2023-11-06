@@ -18,7 +18,7 @@ public class Attribute {
 
         //Change name
         sv4.setName("White");
-        sv4.setScore(4.5);
+        sv4.setScore(27);
         sv4.showInfor();
 
 
@@ -28,5 +28,16 @@ public class Attribute {
 
         //test toString
         System.out.println(sv4);
+
+        //support method
+        sv4.checkTool();
+
+        //overloading
+        double testD = sv4.countDTB(5, 6, 10 );
+        System.out.println(testD); 
+
+
+        double kq = sv4.sumScore(1,2,3,5,6,2.5,16,10);
+        System.out.println(kq);
     }
 }
