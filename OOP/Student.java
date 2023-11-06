@@ -22,9 +22,14 @@ public class Student {
         System.out.println(name+ " : " + score);
     }
 
+    //return
+    public double countDTB(double Math, double Literature) {
+        return ((Math + Literature)/2);
+    }
+
 
     //get and set
-    
+
     public String getName() {
         return name;
     }
@@ -41,6 +46,21 @@ public class Student {
         this.score = score;
     }
 
-    //get and set
+
+    //toString
+    @Override
+    public String toString() {
+        return "Student [name=" + name + ", score=" + score + "]";
+    }
+
+
+    //Support method and service method
+    private boolean checkScore () {
+        return this.score >= 24;
+    }
+    
+    
+
+
     
 }

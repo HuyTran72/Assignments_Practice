@@ -18,6 +18,15 @@ public class Attribute {
 
         //Change name
         sv4.setName("White");
+        sv4.setScore(4.5);
         sv4.showInfor();
+
+
+        //test return
+        double dtbsv4 = sv4.countDTB(7.5, 9);
+        System.out.println(dtbsv4);
+
+        //test toString
+        System.out.println(sv4);
     }
 }
