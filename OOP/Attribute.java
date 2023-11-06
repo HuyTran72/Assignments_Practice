@@ -14,5 +14,10 @@ public class Attribute {
 
         System.out.println(sv4.getName());
         System.out.println(sv4.getScore());
+
+
+        //Change name
+        sv4.setName("White");
+        sv4.showInfor();
     }
 }
